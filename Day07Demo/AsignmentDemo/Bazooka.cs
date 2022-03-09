@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Day07Demo.AsignmentDemo
 {
+    // [S] [O] L I D
     // open closed principal
     // classes should be closed for modification and open for extension
     public class Bazooka : Weapon
