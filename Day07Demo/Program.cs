@@ -3,7 +3,9 @@ using Day07Demo;
 
 Console.WriteLine("Hello, World!");
 //Test1();
-Test2();
+//Test2();
+
+Demo.Test();
 
 
 void Test2()
