@@ -4,9 +4,9 @@
     {
         protected string _name;
         protected int _health;
-        protected char _direction;
+        protected Direction _direction;
 
-        public Player(string name, char startingDirection)
+        public Player(string name, Direction startingDirection)
         {
             _health = 100;
             _name = name;

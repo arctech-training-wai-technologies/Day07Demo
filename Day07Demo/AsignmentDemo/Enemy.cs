@@ -4,7 +4,7 @@ namespace Day07Demo
 {
     public class Enemy : Player, IEnemy
     {
-        public Enemy(string name, char direction) : base(name, direction)
+        public Enemy(string name, Direction direction) : base(name, direction)
         {
         }
 
@@ -23,7 +23,7 @@ namespace Day07Demo
             }
         }
 
-        public void Move(char direction)
+        public void Move(Direction direction)
         {
             Console.Write($"Enemy Originally facing: {_direction}");
             _direction = direction;

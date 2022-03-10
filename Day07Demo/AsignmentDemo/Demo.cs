@@ -23,21 +23,22 @@ namespace Day07Demo
             weapon2.Reload();
             weapon2.Display();
 
-            IEnemy enemy = new Enemy("Rambo", 'N');
-            IHero hero = new Hero("Shaktiman", 'W');
+            //IEnemy enemy = new Enemy("Rambo", 'N');
+            //IHero hero = new Hero("Shaktiman", 'W');
+            IEnemy enemy = new Enemy("Rambo", Direction.North);
+            IHero hero = new Hero("Shaktiman", Direction.West);
 
             enemy.Display(); 
             hero.Display();
-            enemy.Move('S');
+            enemy.Move(Direction.South);
             enemy.ShootHero(hero, 25);
             enemy.GetShot(10);
             enemy.Display();
 
-            hero.Move('S');
+            hero.Move(Direction.South);
             hero.ShootEnemy(enemy, 25);
             hero.GetShot(10);
             hero.Display();
-
 
             IWeapon version2Weapon = new Bazooka(1, 5);
             version2Weapon.Shoot();

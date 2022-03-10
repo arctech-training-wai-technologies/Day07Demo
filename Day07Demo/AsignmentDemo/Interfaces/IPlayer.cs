@@ -3,6 +3,6 @@
     public interface IPlayer
     {
         public void GetShot(int damage);
-        public void Move(char direction); // N, E, W, S        
+        public void Move(Direction direction); // N, E, W, S        
     }
 }
